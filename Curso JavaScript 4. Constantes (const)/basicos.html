@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fundamentos de JavaScript</title>
+</head>
+
+<body>
+<h1>Fundamentos de JavaScript</h1>
+<script>
+    //Usar let para variables que van a cambiar y const para variables que no van a cambiar
+    
+    
+    /* 
+    Si yo declaro valores primitivos ya sean string, number o boolean con const
+    no podre cambiar su contenido 
+    
+    pero si yo defino objetos o arreglos que son valores compuestos con const si podre agregar o quitar
+    elementos 
+    */
+    
+    let a;
+    const PI = 3.1416;
+    //No se pueden crear constantes vacias
+    //const NUEVE;
+    console.log(PI);
+    //PI = 3.15;
+    a = "kenai"
+    console.log(a)
+
+    const objeto = {
+        nombre:"Gabriel",
+        edad:20
+    }
+
+    const colores =["blanco","negro","azul"]
+
+    console.log(objeto)
+    console.log(colores)
+
+    objeto.correo = "gabriel@gmail.com";
+    colores.push("anaranjado")
+
+    console.log(objeto)
+    console.log(colores)
+    
+    /*  
+    si a lo largo del flujo del programa el valor de una variable va a cambiar ,
+    al principio era una cadena de texto, luego un numero y al final un objeto
+    declararo con "let", si a lo largo del flujo la naturaleza de la variable siempre va a ser la misma
+    osea siempre va a ser una cadena de texto, usar const
+    */
+
+</script>
+
+</body>
+</html>

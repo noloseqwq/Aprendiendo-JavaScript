@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de JavaScript</title>
+</head>
+
+<body>
+    <h1>Fundamentos de JavaScript</h1>
+    <script>
+        // Cadenas de textos aka Strings
+
+        let nombre = "Gabriel";
+        let apellido = 'Perdomo';
+        let saludo = new String("Hola Mundo");
+        let lorem = "                       Mollit proident aliqua magna excepteur cupidatat mollit officia duis ad nulla laboris est incididunt deserunt. Pariatur Lorem mollit dolore velit pariatur pariatur elit amet anim ex. Dolore do est laborum do adipisicing tempor. Consectetur adipisicing eiusmod adipisicing sunt officia consectetur dolore mollit nulla ad."
+
+        console.log(nombre, apellido, saludo)
+        console.log(
+            nombre.length, // Contar el numero de carácteres que contenga la variable
+            apellido.length,
+            saludo.length,
+            nombre.toUpperCase(), // Colocar todas las letras en Mayús
+            apellido.toLowerCase(),// Colocar todas las letras en minús
+            lorem.includes("amet"), //Buscar determinada informacion, ya sean números o palabras 
+            lorem.includes("Gabriel"),
+            lorem.trim(),  // eliminar los espacios sobrantes
+            lorem.split("."),// Covertir la variable en un arrys y contar las veces que se repite la informacion
+            lorem.split("amet"),
+        );
+
+
+
+    </script>
+
+</body>
+
+</html>
